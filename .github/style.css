@@ -1,26 +1,38 @@
 
-
-.roboto-bold {
-    font-family: "Roboto", sans-serif; 
-    font-size: 3.3vw;
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
-    font-style: bold;
+    font-variation-settings:
+      "wdth" 100;
+      margin-top:150px;
 }
-
 body {
-    height: 100vh; 
-    overflow: hidden; 
-    background-color: #0F1725; 
-    background: linear-gradient(#2574CC, #0F1725);
+    min-height: 100vh; 
+    background-image: url("images/gradient.png") ;
     color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: "EB Garamond", sans-serif;
+    font-size:25px;
+    overflow-x: hidden; 
 }
 .left-text {
-    position: absolute; 
-    left: 80px; 
-    padding-top: 175px;
-    font-size: 60px; 
+    padding-top:40px;
+    margin-left:80px;
+    margin-right:80px;
 }
 
+.center-text {
+    margin: 25px;
+    padding-top:40px;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+    text-align: center;
+}
 
 /* Navigation Bar Rules */
 nav {
@@ -46,9 +58,9 @@ img{
     }
 
 nav ul li a {
+    font-family: "Open Sans", sans-serif;
     color: white; 
     text-decoration: none; 
-    font-family: "Roboto", sans-serif; 
     font-weight: bold; 
     font-size: 1.3vw;
     border-radius: 18px;
@@ -58,10 +70,10 @@ nav ul li a {
 }
 
 nav ul li a.active {
-    background-color: #0F548F;
+    background-color: #5083c2;
 }
 nav ul li a:hover {
-    background-color: #0F548F;
+    background-color: #6f96d2;
 }
 nav .nav-container {
     display: absolute;
@@ -72,15 +84,27 @@ nav .nav-container .logo-text {
     position: absolute; 
     left:130px;
     font-size: 15px;
-    font-family: "Roboto", sans-serif; 
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     color: white  
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    background-color:#fff; 
+    color: #294575; 
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 150px;
 }
 /* Footer */
 .footer {
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
     width: 100%;
     color: #fff;
 }
