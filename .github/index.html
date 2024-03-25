@@ -3,28 +3,35 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css"> 
     <title>UM Class Scheduler</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <div class="nav-container">
+                    <a href="index.html">
+                <img id = "logo" src="images\favicon (no background).png"  width="40" height="40">
+                <div class = "logo-text">
+                <p>UM Class Scheduler </p>
+            </div>
+            </a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="features.html">Features</a></li>
                 <li><a href="experience.html">Experience</a></li>
+            </div>
             </ul>
         </nav>
     </header>
     <div class="gradient-background">
         <div class="left-text">
             <h1 class="roboto-bold">UM Class Scheduler</h1>
+            <p class="roboto-bold">Course planning made easy.</p>
         </div>
     </div>
-    <script>
-        window.onload = function() {
-            document.querySelector('.roboto-bold').classList.add('show');
-        }
-    </script>
-    
+
+    <footer class="footer">
+        <p>&copy; 2024 Pixel Pioneers. All rights reserved.</p>
+    </footer>
 </body>
 </html>
