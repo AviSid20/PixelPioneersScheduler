@@ -1,30 +1,60 @@
 
-
-.roboto-bold {
-    font-family: "Roboto", sans-serif; 
-    font-size: 3.3vw;
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
-    font-style: bold;
+    font-variation-settings:
+      "wdth" 100;
+      margin-top:150px;
+}
+
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style:small;
+    font-variation-settings:
+      "wdth" 100;
+      margin-top:100px;
 }
 
 body {
-    height: 100vh; 
-    overflow: hidden; 
-    background-color: #0F1725; 
-    background: linear-gradient(#2574CC, #0F1725);
+    background: url("images/mesh-gradient\ \(4\).png") ;
+    min-height: 100vh; 
     color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: "EB Garamond", sans-serif;
+    font-size:25px;
+    overflow-x: hidden; 
+/* 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
 }
-.left-text {
-    position: absolute; 
-    left: 80px; 
-    padding-top: 175px;
-    font-size: 60px; 
-}
+/* @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+.content-wrapper {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+  }
 
-
+  .image-container {
+    width: 50%; 
+    text-align: right;
+  }
+  
 /* Navigation Bar Rules */
 nav {
-    margin: 20px;
     margin-left:80px;
     margin-right:80px;
     float: right; 
@@ -42,45 +72,87 @@ nav ul li {
 img{
     position: absolute; 
     left:80px;
-    color: red;
     }
+    img.img-homepage {
+        width: 240px; 
+        height: 360px; 
+        border: 3px solid rgb(31, 31, 33); 
+        border-radius: 10px;
+        float: right;
+            }
 
+      
 nav ul li a {
+    font-family: "Open Sans", sans-serif;
     color: white; 
     text-decoration: none; 
-    font-family: "Roboto", sans-serif; 
     font-weight: bold; 
     font-size: 1.3vw;
     border-radius: 18px;
-    padding: 15px 20px;
+    padding: 10px 15px;
     transition: background-color 0.6s; 
     background-color: transparent;
 }
 
 nav ul li a.active {
-    background-color: #0F548F;
+    background-color: #5083c2;
 }
 nav ul li a:hover {
-    background-color: #0F548F;
+    background-color: #6f96d2;
 }
 nav .nav-container {
     display: absolute;
     align-items: center;
 }
 
-nav .nav-container .logo-text {
-    position: absolute; 
-    left:130px;
-    font-size: 15px;
-    font-family: "Roboto", sans-serif; 
-    font-weight: bold;
-    color: white  
+.download-btn {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    background-color:#fff; 
+    color: #294575; 
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 150px;
 }
+span.small {
+    font-size: smaller;
+  }
 /* Footer */
 .footer {
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    margin-top: 50px;
+    position: absolute;
     width: 100%;
     color: #fff;
 }
+
+.text-container {
+    width: 100%; 
+    flex: 1;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+        width: 8px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #5083c2;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #6f96d2;
+        }
+        .text-container {
+            width: 50%;
+          }
