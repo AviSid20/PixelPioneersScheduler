@@ -11,7 +11,9 @@ h2 {
     font-weight: 600;
     font-style: small;
 }
-
+h3{
+    color:#18447c;
+}
 body {
     background: url("images/gradient.png");
     min-height: 100%;
@@ -106,6 +108,10 @@ nav .nav-container {
     
     cursor: pointer;
     margin-bottom: 150px;
+}
+.small-black-font{
+    font-size: smaller;
+    color:black"
 }
 
 p {
