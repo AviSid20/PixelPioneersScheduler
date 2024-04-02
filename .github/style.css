@@ -8,9 +8,20 @@ h1{
       "wdth" 100;
       margin-top:150px;
 }
+
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style:small;
+    font-variation-settings:
+      "wdth" 100;
+      margin-top:100px;
+}
+
 body {
+    background: url("images/mesh-gradient\ \(4\).png") ;
     min-height: 100vh; 
-    background-image: url("images/gradient.png") ;
     color: white;
     background-attachment: fixed;
     background-position: center;
@@ -18,22 +29,30 @@ body {
     font-family: "EB Garamond", sans-serif;
     font-size:25px;
     overflow-x: hidden; 
+/* 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
 }
-.left-text {
-    padding-top:40px;
-    margin-left:80px;
-    margin-right:80px;
-}
-
-/* .center-text {
-    margin: 25px;
-    padding-top:40px;
-    position: absolute; 
-    left: 50%; 
-    transform: translateX(-50%);
-    text-align: center;
+/* @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 } */
+.content-wrapper {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+  }
 
+  .image-container {
+    width: 50%; 
+    text-align: right;
+  }
+  
 /* Navigation Bar Rules */
 nav {
     margin-left:80px;
@@ -53,9 +72,16 @@ nav ul li {
 img{
     position: absolute; 
     left:80px;
-    color: red;
     }
+    img.img-homepage {
+        width: 240px; 
+        height: 360px; 
+        border: 3px solid rgb(31, 31, 33); 
+        border-radius: 10px;
+        float: right;
+            }
 
+      
 nav ul li a {
     font-family: "Open Sans", sans-serif;
     color: white; 
@@ -79,15 +105,6 @@ nav .nav-container {
     align-items: center;
 }
 
-nav .nav-container .logo-text {
-    position: absolute; 
-    left:130px;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    color: white  
-}
-
 .download-btn {
     display: inline-block;
     padding: 15px 20px;
@@ -100,16 +117,25 @@ nav .nav-container .logo-text {
     border-radius: 5px;
     margin-bottom: 150px;
 }
+span.small {
+    font-size: smaller;
+  }
 /* Footer */
 .footer {
     text-align: center;
+    margin-top: 50px;
     position: absolute;
     width: 100%;
     color: #fff;
 }
+
+.text-container {
+    width: 100%; 
+    flex: 1;
+}
+
 /* Scroll Bar */
-    /* width */
-    ::-webkit-scrollbar {
+::-webkit-scrollbar {
         width: 8px;
         }
         
@@ -127,3 +153,6 @@ nav .nav-container .logo-text {
         ::-webkit-scrollbar-thumb:hover {
         background: #6f96d2;
         }
+        .text-container {
+            width: 50%;
+          }
